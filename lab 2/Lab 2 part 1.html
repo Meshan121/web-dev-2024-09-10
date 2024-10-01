@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Splash Page</title>
+    <style>
+        /* Add basic styling here if needed */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 120px;
+        }
+        article {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        article iframe {
+            width: 100%;
+            max-width: 400px;
+        }
+        .further-info {
+            background-color: #d32f2f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .further-info img {
+            width: 120px;
+        }
+        .red-panda {
+            text-align: center;
+            padding: 20px;
+        }
+        .red-panda img {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Mozilla logo -->
+    <header>
+        <h1>Mozilla</h1>
+        <img src="firefoxlogo120.png" alt="Firefox Logo">
+    </header>
+
+    <!-- Main article with YouTube video -->
+    <article>
+        <h2>Rocking the free web</h2>
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible...</p>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
+    </article>
+
+    <!-- Further info links with responsive images -->
+    <div class="further-info">
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="firefoxlogo120.png" srcset="firefoxlogo120.png 120w, firefoxlogo400.png 400w" sizes="(max-width: 500px) 120px, 400px" alt="Firefox Logo">
+        </a>
+        <a href="https://addons.mozilla.org/en-US/firefox/">
+            <img src="firefox-addons120.png" srcset="firefox-addons120.png 120w, firefox-addons400.png 400w" sizes="(max-width: 500px) 120px, 400px" alt="Firefox Add-ons">
+        </a>
+        <a href="https://www.mozilla.org/en-US/about/">
+            <img src="mozilla-dinosaur120.png" srcset="mozilla-dinosaur120.png 120w, mozilla-dinosaur400.png 400w" sizes="(max-width: 500px) 120px, 400px" alt="Mozilla Dinosaur">
+        </a>
+        <a href="https://developer.mozilla.org/">
+            <img src="mdn.svg" alt="MDN Logo">
+        </a>
+    </div>
+
+    <!-- Red panda section -->
+    <div class="red-panda">
+        <picture>
+            <source srcset="panda-portrait600.jpg" media="(max-width: 600px)">
+            <img src="panda-landscape1200.jpg" alt="Red Panda">
+        </picture>
+    </div>
+</body>
+</html>
+
