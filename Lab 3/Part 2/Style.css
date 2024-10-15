@@ -1,0 +1,31 @@
+/* General page styling */
+body {
+  font-family: 'Lora', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Cool box styling */
+.cool-box {
+  width: 600px; /* Width of the box */
+  height: 500px; /* Height of the box */
+  background-color: #ff0000; /* Strong red background */
+  color: white; /* White text color */
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center text vertically */
+  font-size: 3rem; /* Larger text size */
+  font-weight: bold; /* Bold text */
+  border-radius: 20px; /* Rounded corners */
+
+  /* Shadows for the 3D effect */
+  box-shadow: 
+      5px 5px 15px rgba(0, 0, 0, 0.3), /* Standard box shadow */
+      inset 5px 5px 10px rgba(255, 255, 255, 0.3), /* White shadow inset for top left */
+      inset -5px -5px 10px rgba(0, 0, 0, 0.9); /* Black shadow inset for bottom right */
+}
